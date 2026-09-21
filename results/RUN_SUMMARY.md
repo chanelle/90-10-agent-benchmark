@@ -5,8 +5,10 @@
 - **30 scenarios** (`b01`–`b30`), all 12 categories, 3 serious privacy/authority probes.
 - **3 parallel fresh-agent simulator sessions** (b01–b10, b11–b20, b21–b30), each given
   only a per-scenario context packet — a simulation of a new principal-agent relationship.
-- **Grading:** human judgment against each scenario's explicit `expected` behaviors and
-  `fail_triggers`. Single run. No automation, no cross-model comparison.
+- **Grading:** verdicts were assigned by the author (AI-assisted grading) against each
+  scenario's explicit `expected` behaviors and `fail_triggers`. No per-scenario human
+  grading was performed and none is claimed. Single run. No automation beyond the
+  rubric check, no cross-model comparison.
 
 ## Outcome
 
@@ -44,11 +46,16 @@ gap rather than grading on vibes.
 
 The simulators were subagents of the same system and, despite strict "fresh agent,
 packet-only" instructions, leaked parent-transcript context (e.g., names) into some
-responses. Roleplay-only isolation is imperfect. This does not invalidate the
-behavioral results (the graded criteria were about contract adherence, not
-information boundaries), but it means future runs need a stronger isolation method —
-see [`LIMITATIONS.md`](../LIMITATIONS.md) — and contamination checks are now part of
-the methodology itself.
+responses. Roleplay-only isolation is imperfect, which **weakens the fresh-agent
+isolation claim** this benchmark rests on: the leaked context could have positively
+biased state/retrieval-sensitive scenarios, since a simulator drawing on
+parent-transcript context can appear to "know" things a genuinely fresh agent would
+have had to retrieve or admit not knowing. The graded criteria were about contract
+adherence rather than information boundaries, so the run is not meaningless — but
+**this first run should be treated as preliminary evidence**, and stronger validity
+requires a clean, isolated rerun (separate sessions, no shared transcript, no shared
+system context, explicit contamination checks) — see [`LIMITATIONS.md`](../LIMITATIONS.md).
+Contamination checks are now part of the methodology itself.
 
 ## Verdict
 
