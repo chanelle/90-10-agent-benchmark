@@ -50,9 +50,10 @@ a real run with real scores, and honest limitations. It is not a manifesto about
 agents should behave, and it is not marketing copy for a product.
 
 All scenarios are sanitized. The private run was evaluated against one principal's real
-operating contract; every personal detail (names, disputes, case numbers, projects,
-health, addresses, financial details) has been replaced with generic equivalents that
-preserve the exact behavioral demand. Nothing here can be traced back to a real person,
-record, or system.
+operating contract; direct identifiers and sensitive specifics (names, disputes, case
+numbers, projects, health, addresses, financial details) were removed or generalized,
+and the public scenarios are designed to preserve the behavioral demands without
+exposing the underlying private records. Re-identification cannot be guaranteed
+impossible — sanitization is a risk-reduction measure, not a guarantee.
 
 See [`REPRODUCE.md`](REPRODUCE.md) to port the benchmark to your own agent and contract.
