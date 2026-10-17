@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="The 90/10 Agent Benchmark — 30 scenarios, 12 categories, 29 PASS, 1 PARTIAL, 0 FAIL">
+  <rect width="1280" height="640" fill="#F4F0E6"/>
+  <rect x="0" y="0" width="1280" height="10" fill="#111410"/>
+  <text x="80" y="105" font-family="ui-monospace, Menlo, monospace" font-size="24" letter-spacing="4" fill="#1F5638">THE 90/10 AGENT BENCHMARK</text>
+  <text x="72" y="360" font-family="Georgia, 'Times New Roman', serif" font-size="230" font-weight="bold" fill="#111410">90/10</text>
+  <text x="700" y="255" font-family="Georgia, 'Times New Roman', serif" font-size="72" fill="#111410">Agent</text>
+  <text x="700" y="340" font-family="Georgia, 'Times New Roman', serif" font-size="72" fill="#111410">Benchmark</text>
+  <rect x="80" y="420" width="1120" height="6" fill="#A9D44D"/>
+  <text x="80" y="490" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="31" fill="#111410">30 scenarios &#183; 12 categories &#183; 29 PASS &#183; 1 PARTIAL &#183; 0 FAIL</text>
+  <text x="80" y="550" font-family="Georgia, 'Times New Roman', serif" font-size="27" font-style="italic" fill="#3d3d3d">Do agents reduce human cognitive load &#8212; or create another job?</text>
+</svg>
